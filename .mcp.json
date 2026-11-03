@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ticktick": {
+      "type": "http",
+      "url": "https://mcp.ticktick.com/"
+    }
+  }
+}

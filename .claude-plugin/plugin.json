@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "jadlis-ticktick",
+  "version": "1.0.0",
+  "displayName": "Jadlis — TickTick assistant",
+  "description": "Скилл /ticktick ведёт задачи, привычки и фокус в TickTick через официальный MCP TickTick: понимает короткие команды («что на сегодня», «добавь …», «заверши …», «чекин …»), выбирает нужный инструмент и отвечает в 1–3 строки. Знает ловушки API: даты весь-день-задач, Inbox, чеклисты, чек-ины привычек. Свои правила раскладки по спискам — в необязательном профиле.",
+  "author": {
+    "name": "Be Cyborg"
+  },
+  "homepage": "https://gitlab.com/beCyborg/jadlis-ticktick",
+  "repository": "https://gitlab.com/beCyborg/jadlis-ticktick",
+  "privacyPolicyUrl": "https://ticktick.com/about/privacy",
+  "keywords": [
+    "jadlis",
+    "ticktick",
+    "tasks",
+    "habits",
+    "focus",
+    "mcp"
+  ],
+  "userConfig": {
+    "PROFILE_PATH": {
+      "type": "string",
+      "title": "Личный профиль (необязательно)",
+      "description": "Путь к своему ticktick-profile.md: в какой список класть какие задачи, метки, чеклисты, смена квартала. Пусто — новые задачи идут в Inbox, при неясности скилл спрашивает.",
+      "default": "",
+      "required": false
+    }
+  }
+}
