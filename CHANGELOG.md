@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-11-03
+
+### Fixed
+- Removed `privacyPolicyUrl` from plugin.json: Claude Code 2.1.263 (the hub CI pin) rejects the unknown field under `--strict`.
+
 ## [1.0.0] — 2026-11-03 — Первый выпуск / First release
 
 ### Для человека
