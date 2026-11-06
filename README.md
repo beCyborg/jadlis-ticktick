@@ -26,7 +26,7 @@ MCP TickTick (сервер инструментов от самого TickTick).
 Нужен Claude Code и аккаунт TickTick.
 
 ```
-claude plugin marketplace add https://gitlab.com/beCyborg/jadlis-hub.git
+claude plugin marketplace add https://github.com/beCyborg/jadlis-hub.git
 claude plugin install jadlis-ticktick@jadlis
 claude plugin list
 ```

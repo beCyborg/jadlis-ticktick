@@ -26,7 +26,7 @@ the timezone from your TickTick settings and never hard-codes one.
 You need Claude Code and a TickTick account.
 
 ```
-claude plugin marketplace add https://gitlab.com/beCyborg/jadlis-hub.git
+claude plugin marketplace add https://github.com/beCyborg/jadlis-hub.git
 claude plugin install jadlis-ticktick@jadlis
 claude plugin list
 ```
