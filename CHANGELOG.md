@@ -4,6 +4,16 @@
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-11-09 — Короткие задачи / Short tasks
+
+### Для человека
+- Задачи в TickTick теперь короткие: название до пяти слов без эмодзи и хэштегов, описание до двух строк.
+- Адрес, время и контакт скилл пишет полностью, чтобы задачу можно было выполнить, ничего больше не открывая.
+- Напоминание ставится, только когда у задачи есть срок или шаг делает сам человек.
+
+### For agents
+- Added: `skills/ticktick/SKILL.md` § «Writing a task» — title ≤5 words, no emoji/`#`/list names/dates; `content` ≤2 lines (gist + next step); place, time and contact in full inside those lines; reminder only with a due time or a human step; long context stays in its note, the task carries the path. A profile may tighten, not loosen.
+
 ## [1.0.1] — 2026-11-03
 
 ### Fixed

@@ -69,6 +69,24 @@ check-in value — 1. Expand relative dates («завтра»,
 tasks via `parentId` — child tasks show up in lists as separate tasks. Use `parentId` only when
 the user asks for real child tasks.
 
+## Writing a task
+
+A task is read on a phone between other things, so it stays short. This applies to every
+`create_task` / `batch_add_tasks` / `update_task` you write, including tasks an agent sets for a
+person; a profile may make it stricter, not looser.
+
+- **Title — up to five words**, a verb first when it is an action («Записать машину на диагностику»).
+  No emoji, no `#`, no list or tag names, no dates or prices in the title.
+- **Description (`content`) — at most two lines**: the gist and the next step. No history, no
+  reasoning, no copied letters; a link or a file path instead of the text it points to.
+- **Place, time and contact go in full** whenever the task has them: the full address, the
+  date and time, the phone or handle of the person — inside those two lines, never shortened:
+  the user acts on the task without opening anything else.
+- **Reminder** — only when the task has a due time or the next step is the user's own (go
+  somewhere, sign, pay, call). No reminder on tasks an agent does itself.
+- Too much context for two lines → keep it where it already lives (a note, a session's plan) and
+  put the path in the description.
+
 ## API pitfalls (checked; month of the check in brackets)
 
 > [!danger] `complete_tasks_in_project` completes EVERY task in the project
